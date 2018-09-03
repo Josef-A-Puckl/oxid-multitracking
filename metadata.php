@@ -2,6 +2,7 @@
 /**
  * Module information
  */
+$sMetadataVersion = '2.0';
 $aModule = array(
     'id'           => 'multitracking',
     'title'        => 'WIBROS Trackingsupport for multiple carriers',
@@ -9,9 +10,9 @@ $aModule = array(
     'url'          => 'http://www.wibros.de',
     'description'  => 'Module for overwriting the default tracking url method to return urls for other carriers than DPD',
     'thumbnail'    => 'picture.png',
-    'version'      => '1.0',
+    'version'      => '2.0.0',
     'author'       => 'WIBROS GmbH',
     'extend'       => array(
-        'oxorder' => 'multitracking/multitracking'
+        \OxidEsales\Eshop\Application\Model\Order::class => \OxidCommunity\MultiTracking\Model\Order::class,
     )
 );

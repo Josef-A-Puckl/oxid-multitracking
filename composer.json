@@ -1,0 +1,24 @@
+{
+  "name": "oxid-community/multitracking",
+  "description": "Module for overwriting the default tracking url method to return urls for other carriers than DPD. For OXID eShop 6.",
+  "type": "oxideshop-module",
+  "keywords": [
+    "oxid",
+    "modules",
+    "admin"
+  ],
+  "homepage": "https://github.com/OXIDprojects",
+  "license": [
+    "GPL-3.0-only"
+  ],
+  "extra": {
+    "oxideshop": {
+      "target-directory": "oxcom/multitracking"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "OxidCommunity\\MultiTracking\\": "../../../source/modules/oxcom/multitracking"
+    }
+  }
+}
